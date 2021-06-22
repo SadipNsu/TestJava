@@ -10,4 +10,6 @@ package testjava;
  * @author ASUS
  */
 public class Utility {
+    
+    
 }

@@ -5,6 +5,9 @@
  */
 package testjava;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  *
  * @author ASUS
@@ -16,8 +19,17 @@ public class TestJava {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Sadip");
-        System.out.println("Sadip2");
+        Book a = new Book("Tin Goinda", 100);
+        a.print("A");
+        Book b = a;
+        b.print("B");
+        b.setName("Bangla");
+        
+        a.print("A");
+
+        Book c = new Book(a);
+        c.setName("My Life");
+        c.print("C");
+        a.print("A");
     }
-    
 }
